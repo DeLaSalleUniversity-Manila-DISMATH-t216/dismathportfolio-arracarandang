@@ -152,6 +152,107 @@ j. Quantifiers
   
   #Week3
 
+On week 3 we were able to tackle the RULES OF INFERENCE:
+
+Rules of Inference
+
+-validity of conclusion, if and only if premises are all true
+  
+  Argument
+    - a sequence of statements that end with a conclusion
+    
+  Validity of the Argument
+    
+    -means that the conclusion, or the final statement is dependent on the structure of the premise
+    
+  Argument Form
+  
+  -propositional logic is a sequence of compound propositions involving propositional variables
+  
+  Validity of Argument Form
+  
+  -means that whatever the substituted propositions are for the propositional variables in the premise, still the conclusion is true  if the premises are all true
+    
+  Fallacies
+  
+  -incorrect reasoning that leads to invalid arguments
+  
+
+METHODS OF PROOF
+
+  Theorems
+  
+    - a statement that can be shown to be true; also referred to as facts or results
+    
+  Proof
+  
+    -a valid argument that establishes the truth of the theorem
+    
+1. Direct Proofs (in Conditional Statements)
+
+  1.a Assume that P is true
+  
+  1.b Show that Q is also true based on statement 1
+  
+  * Odd Numbers {2k + 1 | k is an integer}
+  
+  * Even Numbers {2k | k is an integer}
+  
+    example: 0 is an even number
+
+2. Proof by Contraposition (Indirect proofs)
+
+*If p is complicated than q, use proof by contraposition
+
+  2.a Assume -q is true
+  
+  2.b Show that -p is also true based on statement 1
+    
+3. Vacuos Proof (-p → (p→q))
+
+  3.a show that p is false, because p→q must be true when p is false
+  
+4. Trivial Proof (q → (p→q))
+
+  4.a show that q is true, it follows that p→q must also be true
+  
+5. Proof by Contradiction
+
+  5.a Assume that the premise is not true 
+  
+  { ¬(premise) = T }  - negation of the whole premise
+  
+  5.b Show that statement 1 will end up in a contradiction 
+  
+*Rational Numbers 
+
+    {a/b | a,b are integers, b not equal to 0, a & b doesn't have a common factore except +- 1}
+    
+    {in lowest terms}
+    
+Proofs of Equivalence ( Biconditionals)
+
+p ↔ q , p→q and q→p are both true 
+
+*q→p is a converse
+    
+
+  
+  
+  
+  
+  
+
+
+  
+  
+    
+  
+
+
+    
+ 
+  
   
   
   
