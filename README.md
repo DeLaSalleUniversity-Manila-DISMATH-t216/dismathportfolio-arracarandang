@@ -202,27 +202,27 @@ METHODS OF PROOF
 
 2. Proof by Contraposition (Indirect proofs)
 
-*If p is complicated than q, use proof by contraposition
+  *If p is complicated than q, use proof by contraposition
 
-  2.a Assume -q is true
+    2.a Assume -q is true
   
-  2.b Show that -p is also true based on statement 1
+    2.b Show that -p is also true based on statement 1
     
 3. Vacuos Proof (-p → (p→q))
 
-  3.a show that p is false, because p→q must be true when p is false
+    3.a show that p is false, because p→q must be true when p is false
   
 4. Trivial Proof (q → (p→q))
 
-  4.a show that q is true, it follows that p→q must also be true
+    4.a show that q is true, it follows that p→q must also be true
   
 5. Proof by Contradiction
 
-  5.a Assume that the premise is not true 
+    5.a Assume that the premise is not true 
   
-  { ¬(premise) = T }  - negation of the whole premise
+    { ¬(premise) = T }  - negation of the whole premise
   
-  5.b Show that statement 1 will end up in a contradiction 
+    5.b Show that statement 1 will end up in a contradiction 
   
 *Rational Numbers 
 
@@ -232,9 +232,9 @@ METHODS OF PROOF
     
 Proofs of Equivalence ( Biconditionals)
 
-p ↔ q , p→q and q→p are both true 
+    p ↔ q , p→q and q→p are both true 
 
-*q→p is a converse
+    *q→p is a converse
     
 
   
