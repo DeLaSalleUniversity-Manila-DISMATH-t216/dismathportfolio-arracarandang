@@ -247,15 +247,13 @@ One example is: "Every positive integer is the sum of the squares of 2 integers.
 
 Mathematical Induction is also discussed in which it is a proof technique used to prove results about wide range of objects. 
 
-1. Basis
-
-Show P(1) or P(0) to be true.
+1. Basis: Show P(1) or P(0) to be true.
 
 2. Inductive step
 
-a. Assume P(k) is True. 
+2.a. Assume P(k) is True. 
 
-b. Show P(k+1) is True. 
+2.b. Show P(k+1) is True. 
 
 
 
