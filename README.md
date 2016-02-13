@@ -200,6 +200,8 @@ METHODS OF PROOF
   
     example: 0 is an even number
 
+#Week4
+
 2. Proof by Contraposition (Indirect proofs)
 
   *If p is complicated than q, use proof by contraposition
@@ -236,6 +238,26 @@ Proofs of Equivalence ( Biconditionals)
 
     *q→p is a converse
     
+
+#Week5 
+
+There's a continuation of the discussion about the proof by equivalence with some examples to exercise us with. 
+
+One example is: "Every positive integer is the sum of the squares of 2 integers." This is proven by counterexample  for it can't be expressed as the sum of the squares of 2 integers. 
+
+Mathematical Induction is also discussed in which it is a proof technique used to prove results about wide range of objects. 
+
+1. Basis
+
+Show P(1) or P(0) to be true.
+
+2. Inductive step
+
+a. Assume P(k) is True. 
+
+b. Show P(k+1) is True. 
+
+
 
   
   
