@@ -255,6 +255,250 @@ Mathematical Induction is also discussed in which it is a proof technique used t
 
 2.b. Show P(k+1) is True. 
 
+#Week6
+
+SUMMATION - notation for sum of am, am+1, ..., an is ∑ai=m ai where i is the index of summation.
+        Σ “sigma”
+    
+    
+    RECURSIVE/INDUCTIVE DEFINITION
+        
+        1. Basis step: specify the value at zero
+       
+        2. Recursive step: Find a rule for finding its value at an integer number from the values at smaller integers.
+        example: f(0) = 3, f(n+1) = 2f(n) + 3
+
+    
+RECURSIVE ALGORITHM - solves a problem by reducing it to an instance with smaller input
+
+    
+PROGRAM CORRECTNES - to ensure that a program gives the correct output
+        
+        
+PROGRAM VERIFICATION - A program is said to be correct if it produces the correct output for every possible input.
+           
+            1. Show that the correct answer is obtained if the program terminates.(Partial correctness)
+           
+            2. Show that the program always terminates
+        
+        
+PARTIAL CORRECTNESS
+           
+            initial assertioN (p)- gives the properties that the input values must have.
+           
+            final assertion (q) - gives the properties that the output of the program should have, if the program did what was intended.
+
+    
+HOARE TRIPLE p{S}q
+       
+        S is said to be partially correct with respect to the initial assertion p and the final assertion q if whenever p is true for the input values of S and S terminates, then q is true for the output values of S
+
+    
+    RULES OF INFERENCE - a program is correct by splitting the program into a series of sub-program and show each sub-program is correct.
+    
+    p{S1}q
+    q{S2}r
+  ______________
+  ∴ p{S1;S2)r 
+
+    * CONDITIONAL STATEMENTS
+        (p ∧ condition) {S} q
+        (p ∧ ¬condition) → q
+        __________________________________________
+        ∴ p {if condition then S} q
+        
+        
+        IF-ELSE STATEMENT
+        (p ∧ condition) {S1} q
+        (p ∧ ¬condition) {S2} q
+        _____________________________________
+        ∴ p {if condition then S1 else S2} q
+
+    POWER SERIES
+    
+#WEEK7
+
+Intoduction to Set Theory
+
+In this week discussion, 'sets' is introduced, in which sets are collection of objects used extensively in counting (unordered collection)
+
+An example given is to distinguish whether 1 and {1} is equal or not. And the answer is 1 is not equal to {1}, for '1' is a number and '{1}' is a set containing number 1.  
+
+-An empty set is a set with no elements, { }. 
+
+-Set {1,2,5} = Set {5,3,1} = Set {1,3,3,5,5,5} *It is equal if and only if the given sets have the same elements
+
+#WEEK8
+
+It is also discussed about Cardinality of a set, it is the number of elements it contains. Example: 
+
+    |S|=26 (S as the set of english alphabet)
+
+    |N| is a set of natural numbers. |N|='aleph-nought'/infinite numbers
+
+Power Set is also discussed as the set of all subsets of the set S, 'P(S)'. To get the number of subsets needed in a power set, formula :(2^n) can be used. Example: 
+
+    2^n= 2^3= 8 subsets for set {0,1,2}
+    
+    Power set of {0,1,2}: { {}, {0}, {1}, {2}, {0,1}, {1,2}, {0,2}, {0,1,2} }
+    
+We also discussed the different set operations like Union, Intersection ad disjoint. The difference between these three is that Union is a set that contains those elements that either at the first set or at the second set or both. While for intersection, it is a set that contains the elements present in both given sets. and for the disjoint, it is if the intersection is the empty set. 
+
+Some of the Set Identities is also discussed like Identity Laws, De Morgan's and Complementation law/Double Negation Law.
+
+#WEEK9
+
+'Let A & B be sets. A function f from A to B is an assignment of exactly one element of B to each element of A.'
+
+Functions are called mappings/ transformations. It has the domain and co-domain. Domain is the set of "input" or argument values for which the function is defined. While co-domain or target set of a function is the set Y into which all of the output of the function is constrained to fall. Co-domain is sometimes equal with the range. Range is the actually occuring values. 
+
+Different types of functions are discussed such as One-to-One (Injective), Onto-function (Subjective), One-to-one correspondence(Bijection).
+
+    One-to-one function (Injective)
+      -no value is used by more than one value in the domain. 
+      
+    Onto Function (Subjective)
+      -functions have equal range and co-domain
+      -for all values in the co-domain, there is a value in the range mapped to it. 
+     
+     One-to-one correspondence(Bijection)
+      
+#WEEK10
+
+Algorithm - is a finite set of precise instructions for performing a computation or for solving a problem. In writing an algorithm preconditions and post-conditions are needed. Pre-conditions are statements that describe a valid input. 
+
+Pseudocodes are also used to describe an algorithm. For which it means that it provides an intermediate step between an English language description of an algorithm and an implementation of this algorithm in a programming language. 
+
+    Algorithm 1: Finding the max element of the sequence
+    
+      Input: Find Max ( {a1 , a2 , a3,..., an: it is an element of an integer})
+      
+      Output: Max element
+      
+        max=a1
+        
+        for i= 2 to n
+        
+        {if max < ai, then max = ai }
+        
+  ______________________________________________________________
+  
+  Algorithm 2: Linear Search/ Sequential Search
+  
+  Input: Search ( {a1, a2, a3,...,an: it is an element of an integer} x as the searched element)
+  
+  Output: location of x = i
+  
+    loc = i if found, loc = -1 if not found
+  
+  i=1
+  
+  while ((x != ai) ^ (i <= n))
+  
+   {i=i+1};
+  
+  if (i<=n)
+  
+    {loc = 1};
+    
+  else
+  
+    {loc=-1};
+    
+  ______________________________________________________________
+  
+  Algorithm 3: Binary Search
+  
+  Input: Search ( {a1, a2, a3,...,an: it is an element of an integer} x as the searched element)
+  
+  Output: location, loc
+  
+      i=begin=1
+      
+      j=end=n
+      
+      mid=[(i+j)/2]
+      
+      if (x>am) then i=m+1; else (j=m);
+      
+      if x = ai then location = i
+      
+      else location = 0
+      
+ ______________________________________________________________
+ 
+ Algorithm 4: Bubble Sort
+ 
+ Input: bubble sort(a1, a2, a3,..., an| n >= 2)
+ 
+ Output: {X1<X2<X3<...<Xn}
+ 
+ for i = 1 to n-1
+ 
+    for j =1 to n-i
+    
+      if (aj>aj+1) then interchange (aj and aj + 1)
+      
+      
+______________________________________________________________
+
+Algorithm 5: Insertion Sort
+
+Input: insertion sort(a1, a2, a3,..., an)
+ 
+Output: {X1<X2<X3<...<Xn}
+ 
+  for j = 2 to n
+  
+    { i=1
+    
+        while aj>ai
+        
+          i = i+1
+        
+      m=aj
+      
+      for k=0 to j-i-1
+      
+        aj-k= aj-k-1
+        
+      ai=m 
+      
+    }
+    
+ ______________________________________________________________
+ 
+ Algorithm 6: Greedy Algorithm
+ 
+ 
+ #WEEK10
+ 
+ Growth of Functions 
+ 
+  Big-O notation- is the estimated number of operations an algorithm uses as its input grows
+  
+                - does not provide a lower bound for the size of f(x)
+  
+      f(x) <= C (g(x)) whenever x > k
+    
+      To prove that a function is a Big-O of another function, provide witnesses such as C and k. And to get C, use the point
+      of intersection of the two functions. *If k is a negative, start at 0 (k=0 is valid)
+  
+  Big-Omega - for the lower bound (Big-Ω)
+  
+  Big-Theta - for both upper and lower bound (Big-θ)  
+  
+    
+  
+      
+
+
+    
+
+
+
+
+
 
 
   
